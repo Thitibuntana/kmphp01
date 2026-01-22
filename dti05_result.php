@@ -7,15 +7,15 @@
 </head>
 <body>
     <?php
-    $n1 = $_GET["num1"]
-    $n2 = $_GET["num2"]
+    $n1 = $_GET["num1"];
+    $n2 = $_GET["num2"];
 
     if( empty($n1) == true || empty($n2) == true){
-        echo "CAN'T BE EMPTY!!"
+        echo "CAN'T BE EMPTY!!";
         header("Location: dti_05.php");
     }
     if( floatval($n1) <= 0 || intval($n2) <= 0){
-        echo "CAN'T BE NEGATIVE/ZERO!!"
+        echo "CAN'T BE NEGATIVE/ZERO!!";
         header("Location: dti_05.php");
     }
 
